@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora - Conversor de Temperaturas</title>
+
+    <link rel="stylesheet" href="estilo.css" />
+
+    <!-- BOOTSTRAP -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="funcoes.js"></script>
+  </head>
+  <body>
+    <h1 class="text-center p-5">Conversor de Temperaturas</h1>
+
+    <div class="calculator">
+      <div id="saida" class="saida"></div>
+      <div id="ecra" class="calculator__output">0</div>
+      <div class="calculator__keys">
+        <button onclick="teclar(7)" class="calculator__key">7</button>
+        <button onclick="teclar(8)" class="calculator__key">8</button>
+        <button onclick="teclar(9)" class="calculator__key">9</button>
+        <button onclick="teclar(4)" class="calculator__key">4</button>
+        <button onclick="teclar(5)" class="calculator__key">5</button>
+        <button onclick="teclar(6)" class="calculator__key">6</button>
+        <button onclick="teclar(1)" class="calculator__key">1</button>
+        <button onclick="teclar(2)" class="calculator__key">2</button>
+        <button onclick="teclar(3)" class="calculator__key">3</button>
+        <button onclick="teclar(0)" class="calculator__key">0</button>
+        <button onclick="teclar('.')" class="calculator__key">.</button>
+        <button onclick="limpar()" class="calculator__key">AC</button>
+        <button
+          onclick="calcular()"
+          class="calculator__key calculator__key--enter"
+        >
+          =
+        </button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
